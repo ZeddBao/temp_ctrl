@@ -1,0 +1,9 @@
+
+State Machine - |Top|DS18B20Driver:ds18b20_inst|currState
+Name currState.RD_DATA currState.RD_CMD currState.INIT2 currState.WAIT currState.WR_CMD currState.INIT1 
+currState.INIT1 0 0 0 0 0 0 
+currState.WR_CMD 0 0 0 0 1 1 
+currState.WAIT 0 0 0 1 0 1 
+currState.INIT2 0 0 1 0 0 1 
+currState.RD_CMD 0 1 0 0 0 1 
+currState.RD_DATA 1 0 0 0 0 1 

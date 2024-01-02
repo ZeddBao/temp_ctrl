@@ -1,0 +1,40 @@
+module FrequencyDivider(
+    input wire clk,                      // Input clock signal
+    output reg clk240 = 1,               // Clock signal after frequency division
+    output reg clk2_4 = 1
+);
+
+    reg [3:0] count12 = 0;     // 24 MHz -> 1 MHz
+    reg [15:0] count50k = 0;   // 24 MHz -> 240 Hz
+    reg [10:0] count100 = 0;   // 240 Hz -> 2.4 Hz   
+
+    always @(negedge clk) begin
+        // For 240 Hz clock
+        if (count50k == 49999) begin
+            count50k <= 0;                  // Reset the counter
+            clk240 <= ~clk240;           // Toggle the output clock
+        end
+        else begin
+            count50k <= count50k + 1;     // Increment the counter
+        end
+
+        if (count24 == 11) begin
+            count24 <= 0;                   // Reset the counter
+            clk1M <= ~clk1M;                // Toggle the output clock
+        end
+        else begin
+            count24 <= count24 + 1;         // Increment the counter
+        end
+    end
+
+    always @(negedge clk240) begin
+        // For 2.4 Hz clock
+        if (count100 == 99) begin
+            count100 <= 0;                  // Reset the counter
+            clk2_4 <= ~clk2_4;           // Toggle the output clock
+        end
+        else begin
+            count100 <= count100 + 1;       // Increment the counter
+        end
+    end
+endmodule

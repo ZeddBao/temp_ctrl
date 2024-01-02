@@ -1,0 +1,46 @@
+module top(
+    input wire clk,
+    output wire DL_a, 
+    output wire DL_b, 
+    output wire DL_c, 
+    output wire DL_d, 
+    output wire DL_e, 
+    output wire DL_f, 
+    output wire DL_g, 
+    output wire DL_DP,
+    output wire DLA_0,
+    output wire DLA_1,
+    output wire DLA_2,
+    output wire DLA_3
+);
+
+    assign rst = 1'b0;
+	assign input_num = 16'd1234;
+
+    wire clk_d10;
+    
+    FrequencyDivider10 fd10(
+        .clk(clk),
+        .clkOut(clk_d10)
+    )
+
+    // Instantiate the seven segment display module
+    display4 display4_inst(
+        .input_num(input_num),
+        .DL_a(DL_a),
+        .DL_b(DL_b),
+        .DL_c(DL_c),
+        .DL_d(DL_d),
+        .DL_e(DL_e),
+        .DL_f(DL_f),
+        .DL_g(DL_g),
+        .DL_DP(DL_DP),
+        .DLA_0(DLA_0),
+        .DLA_1(DLA_1),
+        .DLA_2(DLA_2),
+        .DLA_3(DLA_3),
+        .clk(clk_d10),
+        .rst(rst)
+    );
+
+endmodule

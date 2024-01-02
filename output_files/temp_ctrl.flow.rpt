@@ -1,0 +1,158 @@
+Flow report for temp_ctrl
+Fri Dec 01 16:31:04 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Successful - Fri Dec 01 16:31:04 2023      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; temp_ctrl                                  ;
+; Top-level Entity Name              ; Top                                        ;
+; Family                             ; Cyclone III                                ;
+; Device                             ; EP3C25Q240C8                               ;
+; Timing Models                      ; Final                                      ;
+; Total logic elements               ; 2,751 / 24,624 ( 11 % )                    ;
+;     Total combinational functions  ; 2,489 / 24,624 ( 10 % )                    ;
+;     Dedicated logic registers      ; 728 / 24,624 ( 3 % )                       ;
+; Total registers                    ; 728                                        ;
+; Total pins                         ; 45 / 149 ( 30 % )                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 2,048 / 608,256 ( < 1 % )                  ;
+; Embedded Multiplier 9-bit elements ; 4 / 132 ( 3 % )                            ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/01/2023 16:27:58 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; temp_ctrl           ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                ;
++-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                     ; Value                                                                                    ; Default Value ; Entity Name ; Section Id       ;
++-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID               ; 2544940563442.170141927828316                                                            ; --            ; --          ; --               ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                              ; --            ; --          ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                                ; <None>        ; --          ; --               ;
+; ENABLE_SIGNALTAP                    ; On                                                                                       ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                       ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                        ; --            ; --          ; --               ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                                                     ; --            ; --          ; --               ;
+; PARTITION_COLOR                     ; 16764057                                                                                 ; --            ; Top         ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                                    ; --            ; Top         ; Top              ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                                   ; --            ; Top         ; Top              ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                                      ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                    ; --            ; --          ; --               ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                             ; --            ; --          ; --               ;
+; SLD_FILE                            ; db/stp1_auto_stripped.stp                                                                ; --            ; --          ; --               ;
+; SLD_NODE_CREATOR_ID                 ; 110                                                                                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                ; sld_signaltap                                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_RAM_BLOCK_TYPE=AUTO                                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_DATA_BITS=16                                                                         ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_BITS=16                                                                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_INFO=805334528                                                                  ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_POWER_UP_TRIGGER=0                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                               ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_FLOW_USE_GENERATED=0                                                           ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_STATE_BITS=11                                                                        ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_BUFFER_FULL_STOP=1                                                                   ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_CURRENT_RESOURCE_WIDTH=1                                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL=1                                                                      ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_IN_ENABLED=0                                                                 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                            ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_LOWORD=16052                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_INVERSION_MASK_LENGTH=69                                                             ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SEGMENT_SIZE=128                                                                     ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_NODE_CRC_HIWORD=52991                                                                ; --            ; --          ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT       ; SLD_SAMPLE_DEPTH=128                                                                     ; --            ; --          ; auto_signaltap_0 ;
+; TOP_LEVEL_ENTITY                    ; Top                                                                                      ; temp_ctrl     ; --          ; --               ;
+; USE_SIGNALTAP_FILE                  ; stp1.stp                                                                                 ; --            ; --          ; --               ;
++-------------------------------------+------------------------------------------------------------------------------------------+---------------+-------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:50     ; 1.0                     ; 4768 MB             ; 00:00:08                           ;
+; Fitter                    ; 00:00:51     ; 1.5                     ; 5545 MB             ; 00:00:31                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 4609 MB             ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:17     ; 1.1                     ; 4737 MB             ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:17     ; 1.0                     ; 4585 MB             ; 00:00:07                           ;
+; Total                     ; 00:02:27     ; --                      ; --                  ; 00:00:58                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; cunluo           ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; cunluo           ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; cunluo           ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; cunluo           ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; cunluo           ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off temp_ctrl -c temp_ctrl
+quartus_fit --read_settings_files=off --write_settings_files=off temp_ctrl -c temp_ctrl
+quartus_asm --read_settings_files=off --write_settings_files=off temp_ctrl -c temp_ctrl
+quartus_sta temp_ctrl -c temp_ctrl
+quartus_eda --read_settings_files=off --write_settings_files=off temp_ctrl -c temp_ctrl
+
+
+

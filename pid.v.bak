@@ -1,0 +1,34 @@
+module PID(
+    input wire clk,
+    input wire [15:0] inputNum,
+    input wire [15:0] setNum,
+    output wire [7:0] outputNum,
+    output wire sign
+);
+
+wire [16:0] err;
+wire [16:0] errD;
+wire [8:0] result;
+reg [16:0] currErr = 0;
+reg [16:0] lastErr = 0;
+reg [32:0] errI = 0;
+
+assign err = $signed(inputNum) - $signed(setNum);
+assign errD = $signed(currErr) - $signed(lastErr);
+
+always @(negedge clk) begin
+    if (currErr != err) begin
+        lastErr <= currErr;
+        errI <= $signed(errI) + $signed(err);
+    end
+    currErr <= err;
+end
+
+localparam ki = 0;
+localparam kp = 0;
+assign result = ($signed(err) >>> 4) + $signed(errI) * ki + $signed(errD) * kp;
+
+assign sign = result[8];
+assign outputNum = $signed(result) > 0 ? result[7:0] : ((~result) + 1)[7:0];
+
+endmodule

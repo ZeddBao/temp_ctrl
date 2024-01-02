@@ -1,0 +1,264 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 12:14:34  October 20, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		temp_ctrl_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C25Q240C8
+set_global_assignment -name TOP_LEVEL_ENTITY Top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:14:34  OCTOBER 20, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_4 -to BUZZ
+set_location_assignment PIN_37 -to "LCD RS"
+set_location_assignment PIN_38 -to HC1
+set_location_assignment PIN_39 -to HC3
+set_location_assignment PIN_41 -to HC0
+set_location_assignment PIN_43 -to HC4
+set_location_assignment PIN_44 -to LC7
+set_location_assignment PIN_45 -to LC6
+set_location_assignment PIN_49 -to LC5
+set_location_assignment PIN_50 -to LC3
+set_location_assignment PIN_51 -to LCF
+set_location_assignment PIN_52 -to LCE
+set_location_assignment PIN_55 -to LC8
+set_location_assignment PIN_56 -to HC6
+set_location_assignment PIN_57 -to HC7
+set_location_assignment PIN_63 -to HC5
+set_location_assignment PIN_64 -to HC2
+set_location_assignment PIN_65 -to HC9
+set_location_assignment PIN_69 -to HC8
+set_location_assignment PIN_68 -to HCB
+set_location_assignment PIN_70 -to HCC
+set_location_assignment PIN_71 -to LCD
+set_location_assignment PIN_72 -to LCB
+set_location_assignment PIN_73 -to LC1
+set_location_assignment PIN_76 -to LC2
+set_location_assignment PIN_78 -to LC4
+set_location_assignment PIN_80 -to LC9
+set_location_assignment PIN_81 -to LCA
+set_location_assignment PIN_82 -to LCC
+set_location_assignment PIN_83 -to HCE
+set_location_assignment PIN_84 -to HCF
+set_location_assignment PIN_87 -to HCD
+set_location_assignment PIN_88 -to HCA
+set_location_assignment PIN_93 -to KEY1
+set_location_assignment PIN_94 -to KEY2
+set_location_assignment PIN_95 -to KEY3
+set_location_assignment PIN_98 -to KEY4
+set_location_assignment PIN_99 -to KEY5
+set_location_assignment PIN_100 -to KEY6
+set_location_assignment PIN_103 -to KEY7
+set_location_assignment PIN_106 -to KEY8
+set_location_assignment PIN_107 -to LEDR1
+set_location_assignment PIN_108 -to LEDR2
+set_location_assignment PIN_109 -to LEDR3
+set_location_assignment PIN_110 -to SW1
+set_location_assignment PIN_111 -to LEDR4
+set_location_assignment PIN_112 -to LEDR5
+set_location_assignment PIN_113 -to SW2
+set_location_assignment PIN_114 -to SW3
+set_location_assignment PIN_117 -to LEDR6
+set_location_assignment PIN_118 -to SW4
+set_location_assignment PIN_119 -to SW5
+set_location_assignment PIN_120 -to LEDR7
+set_location_assignment PIN_126 -to SW6
+set_location_assignment PIN_127 -to SW7
+set_location_assignment PIN_128 -to LEDR8
+set_location_assignment PIN_131 -to SW8
+set_location_assignment PIN_132 -to LEDR9
+set_location_assignment PIN_133 -to LEDR10
+set_location_assignment PIN_134 -to LEDR11
+set_location_assignment PIN_135 -to LEDR12
+set_location_assignment PIN_137 -to KEY13
+set_location_assignment PIN_139 -to KEY14
+set_location_assignment PIN_142 -to KEY15
+set_location_assignment PIN_143 -to KEY16
+set_location_assignment PIN_144 -to KEY12
+set_location_assignment PIN_145 -to KEY11
+set_location_assignment PIN_146 -to KEY9
+set_location_assignment PIN_147 -to KEY10
+set_location_assignment PIN_148 -to GPIO0
+set_location_assignment PIN_159 -to GPIO1
+set_location_assignment PIN_161 -to GPIO3
+set_location_assignment PIN_160 -to GPIO2
+set_location_assignment PIN_162 -to GPIO4
+set_location_assignment PIN_164 -to GPIO5
+set_location_assignment PIN_166 -to GPIO6
+set_location_assignment PIN_167 -to GPIO7
+set_location_assignment PIN_168 -to GPIO8
+set_location_assignment PIN_169 -to GPIO9
+set_location_assignment PIN_171 -to GPIO10
+set_location_assignment PIN_173 -to GPIO11
+set_location_assignment PIN_195 -to HEX04
+set_location_assignment PIN_196 -to HEX03
+set_location_assignment PIN_197 -to HEX02
+set_location_assignment PIN_200 -to HEX07
+set_location_assignment PIN_201 -to HEX14
+set_location_assignment PIN_202 -to HEX13
+set_location_assignment PIN_203 -to HEX12
+set_location_assignment PIN_207 -to HEX17
+set_location_assignment PIN_214 -to HEX11
+set_location_assignment PIN_216 -to HEX10
+set_location_assignment PIN_217 -to HEX15
+set_location_assignment PIN_218 -to HEX16
+set_location_assignment PIN_219 -to HEX01
+set_location_assignment PIN_221 -to HEX00
+set_location_assignment PIN_223 -to HEX05
+set_location_assignment PIN_224 -to HEX06
+set_location_assignment PIN_226 -to DL_b
+set_location_assignment PIN_230 -to DL_g
+set_location_assignment PIN_231 -to DL_c
+set_location_assignment PIN_232 -to DL_f
+set_location_assignment PIN_233 -to DL_DP
+set_location_assignment PIN_234 -to DL_a
+set_location_assignment PIN_235 -to DL_d
+set_location_assignment PIN_236 -to DL_e
+set_location_assignment PIN_237 -to DLA_0
+set_location_assignment PIN_238 -to DLA_1
+set_location_assignment PIN_239 -to DLA_2
+set_location_assignment PIN_240 -to DLA_3
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_33 -to clk
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_6 -to LCD_DATA6
+set_location_assignment PIN_9 -to LCD_DATA5
+set_location_assignment PIN_12 -to LCD_DATA4
+set_location_assignment PIN_13 -to LCD_DATA3
+set_location_assignment PIN_14 -to LCD_DATA2
+set_location_assignment PIN_18 -to LCD_DATA1
+set_location_assignment PIN_21 -to LCD_DATA0
+set_location_assignment PIN_22 -to LCD_EN
+set_location_assignment PIN_24 -to LCD_RW
+set_location_assignment PIN_189 -to EEP_I2C_SCLK
+set_location_assignment PIN_194 -to EEP_I2C_SDAT
+set_location_assignment PIN_188 -to DAC_STDIN
+set_location_assignment PIN_187 -to DA_SCLK
+set_location_assignment PIN_186 -to DAC_CS
+set_location_assignment PIN_185 -to AD_SCLK
+set_location_assignment PIN_184 -to ADC_SDOUT
+set_location_assignment PIN_183 -to ADC_CS
+set_location_assignment PIN_182 -to PS2_CLK
+set_location_assignment PIN_181 -to PS2_DAT
+set_location_assignment PIN_177 -to S1_RX
+set_location_assignment PIN_176 -to S1_TX
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "Display4Driver:display4_inst|inputNum[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "Display4Driver:display4_inst|inputNum[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "Display4Driver:display4_inst|inputNum[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "Display4Driver:display4_inst|inputNum[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "Display4Driver:display4_inst|inputNum[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "Display4Driver:display4_inst|inputNum[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "Display4Driver:display4_inst|inputNum[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "Display4Driver:display4_inst|inputNum[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "Display4Driver:display4_inst|inputNum[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "Display4Driver:display4_inst|inputNum[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "Display4Driver:display4_inst|inputNum[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "Display4Driver:display4_inst|inputNum[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "Display4Driver:display4_inst|inputNum[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "Display4Driver:display4_inst|inputNum[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "Display4Driver:display4_inst|inputNum[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "Display4Driver:display4_inst|inputNum[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "Display4Driver:display4_inst|inputNum[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "Display4Driver:display4_inst|inputNum[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "Display4Driver:display4_inst|inputNum[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "Display4Driver:display4_inst|inputNum[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "Display4Driver:display4_inst|inputNum[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "Display4Driver:display4_inst|inputNum[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "Display4Driver:display4_inst|inputNum[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "Display4Driver:display4_inst|inputNum[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "Display4Driver:display4_inst|inputNum[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "Display4Driver:display4_inst|inputNum[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "Display4Driver:display4_inst|inputNum[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "Display4Driver:display4_inst|inputNum[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "Display4Driver:display4_inst|inputNum[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "Display4Driver:display4_inst|inputNum[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "Display4Driver:display4_inst|inputNum[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "Display4Driver:display4_inst|inputNum[9]" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=16" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=16" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name VERILOG_FILE PID.v
+set_global_assignment -name VERILOG_FILE PWMDriver.v
+set_global_assignment -name VERILOG_FILE DS18B20Driver.v
+set_global_assignment -name VERILOG_FILE Debounce.v
+set_global_assignment -name VERILOG_FILE InputStateMachine.v
+set_global_assignment -name VERILOG_FILE Display4Driver.v
+set_global_assignment -name VERILOG_FILE Display2Driver.v
+set_global_assignment -name VERILOG_FILE DecimalToBinary8.v
+set_global_assignment -name VERILOG_FILE BinaryToDecimal8.v
+set_global_assignment -name VERILOG_FILE KeyboardDriver.v
+set_global_assignment -name VERILOG_FILE FrequencyDivider.v
+set_global_assignment -name VERILOG_FILE Top.v
+set_global_assignment -name VERILOG_FILE SevenSegmentDecoder.v
+set_global_assignment -name VERILOG_FILE BinaryToDecimal16.v
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=16052" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=69" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=128" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=52991" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "FrequencyDivider:fd_inst|clk1" -section_id auto_signaltap_0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp
